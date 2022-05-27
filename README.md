@@ -3,84 +3,74 @@
 CWRU Data Analytics Module Three Challenge
 
 
-## Overview of Project
+## Overview of the Election Audit
 
-The project involved learning about using pandas, including data frames and capabilities such as loc, mean, and formatting with a  data set that included math and reading scores for in 15 school systems.  A variety of segmentations and views of the student populations along dimensions such as per-school spending, school size, high and low overall passing rates and aggregations for size and spending groups.   Additionally, we were asked to remove the reading and math scores from the data for 9th grade students at Thomas High School due to concerns around cheating and re-run the analysis - and then provide observations as to the impact. 
+The challenge involved learning about a wide range of Python functions, data structures and methods for calculations, modifying data structures, looping, conditionals reading/writing to files and formatting outputs.   These skills were used to create summary statistics from a modestly large election dataset from three counties for three candidates and ~370,000 voters. The information was created by iterating through the dataset to create totals and % for each candidate and county the overall winner.   
 
 
 ### Purpose
 
-The purpose of the challenge was to exercise our skills with using pandas in a variety of ways to summarize, aggregate, sort, filter, format and replace data to facilitate summary-level views of the student and school populations.  
+The purpose of the challenge was to exercise our skills to segment and summarize the data, identify the overall winner and the county with the largest turnout.  This information was formatted for display and written to a file for reference. created with using pandas in a variety of ways to summarize, aggregate, sort, filter, format and replace data to facilitate summary-level views of the student and school populations.  
 
 ## Analysis 
 
-Re-running the school district analysis had two components:
+The Election analysis had four components:
 
-(1) replacing the scores of the 9th grade Thomas High School students with 'NaN' - which effectively impacted all the aggregate stats in which these scores had previously been included;  and
+(1) Reading the election data from a csv file 
 
-(2) Removing the 9th grade Thomas High School students from the population totals - which effectively impacted all the aggregate population related stats in which these students had previously been included (e.g., total students, per-student stats, etc.)
+(2) Producing totals and % for candidates from the data and identifying the overall winner
+
+(3) Producing totals and % for counties from the data and identifying the county with the highest turnout
+
+(4) Formatting the results for display and writing them to a text file 
 
 ### Analysis approach 
 
-The analysis involved unsing the pandas 'loc' method and numPy to identify all the 9th graders from Thomas High School and replacing only their grades with 'NaN".   It was then necessary to re-run all the grade statistics, sorts and aggregations with the Thomas High School 9th graders effectively removed from the data since they no longer have scores which contribute to the computed means, % pass for math/reading/overall or student population counts.  This has a small, but pervasive effect on the outcomes of the analysis.     
+The analysis involved using the csv.reader module to load the file and building a list (called 'election_table') from which to work.  Then iterating through that list to create lists of Counties and Candidates which were subsequently used to create dictionaries with summary totals for Candidated and Counties.  This was done by iterating through the 'election_table' for each set of totals.   A series of 'For' loops were used to do this with each aggregate total statistic.   The higest totals for County and Candidate were identified using the 'max' function and the results were formatted for display and then also writing to the text file.     
 
 
 ### Summary
 
-Removing the Thomas High School 9th grader scores causes the averages for Math, Reading and Overall to fall slightly.  It also lowers the same set of stats for the budget and population range aggregations - where Thomas High School meets the grouping criteria (school type, school size and budget range). 
+The results were not at all close.   
 
-### Specific metrics impact 
+- Denver had the dominant turnout, with nearly 10x the number of voters 
 
-The several school district metrics impacted by removing the Thomas High School students from the data and analysis are summarized below.  Note that the dark VS Code images are "before" and the lighter Jypyter Notebook images are "after" in the bulleted items shown here.  
-
-- The average test scores were lowered for both Math and Reading 
-
-**Before:**
+- Diana DeGette won almost 74% of the vote 
 
 ![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/before_Avg_scores.png)
 
-**after:**  
+### How this be re-used for other elections
+
+The script can be re-used in future elections as none of it is 'hard coded' for this data, meaning that more candidates and/or more counties would simply flow through. 
+
+The formatting and categories, however, would need to be updated if other stats or comparisons were sought (mean, distribution, etc.).   
+
+**Loading the data:**
+
+![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/before_Avg_scores.png)
+
+**Pulling out the counties:**  
 
 ![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/after_Avg_scores.png)
 
+**Pulling out the candidates:**  
 
--The percent passing scores were lowered for Math, Reading and Overall
 
-**Before:**
+**Totals for the counties:**
 
 ![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/before_passing_percent.png)
 
-**After:**
+**Totals for the candidates:**
 
 ![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/after_passing_percent.png)
 
 
-- The Spending Ranges Per Student roll-ups were impacted where Thomas High School is represented in the $631-645 grouping
 
-**Before:**
+**displaying results:**
 
 ![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/before_spending.png)
 
-**After:**
+**writing results to file:**
 
 ![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/after_spending.png)
 
-- The Size Ranges  roll-ups were impacted where Thomas High School is represented in the medium grouping
-
-**Before:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/before_size.png)
-
-**After:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/after_size.png)
-
-- The school type roll-ups were impacted where Thomas High School is represented in charter grouping
-
-**Before:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/before_type.png)
-
-**After:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/after_type.png)
