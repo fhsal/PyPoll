@@ -37,7 +37,7 @@ The results were not at all close.
 
 - Diana DeGette won almost 74% of the vote 
 
-![img](https://github.com/fhsal/PyPoll/blob/main/election_results.png)
+![img](https://github.com/fhsal/PyPoll/blob/main/Images/election_results.png)
 
 ### How this be re-used for other elections
 
@@ -49,33 +49,33 @@ The formatting and categories, however, would need to be updated if other stats 
 
 **Loading the data:**
 
-![img](https://github.com/fhsal/PyPoll/blob/main/loading.png)
+![img](https://github.com/fhsal/PyPoll/blob/main/Images/loading.png)
 
 **Pulling out the counties:**  
 
-![img](https://github.com/fhsal/PyPoll/blob/main/pull_counties.png)
+![img](https://github.com/fhsal/PyPoll/blob/main/Images/pull_counties.png)
 
 **Pulling out the candidates:**  
 
-![img](https://github.com/fhsal/PyPoll/blob/main/pull_candidates.png)
+![img](https://github.com/fhsal/PyPoll/blob/main/Images/pull_candidates.png)
 
 **Totals for the counties:**
 
-![img](https://github.com/fhsal/PyPoll/blob/main/county_counts.png)
+![img](https://github.com/fhsal/PyPoll/blob/main/Images/county_counts.png)
 
 **Totals for the candidates:**
 
-![img](https://github.com/fhsal/PyPoll/blob/main/count_candidates.png)
+![img](https://github.com/fhsal/PyPoll/blob/main/Images/count_candidates.png)
 
 **displaying results:**
 
-![img](https://github.com/fhsal/PyPoll/blob/main/display_summary.png)
+![img](https://github.com/fhsal/PyPoll/blob/main/Images/display_summary.png)
 
 **writing results to file:**
 
-![img](https://github.com/fhsal/PyPoll/blob/main/write_summary.png)
+![img](https://github.com/fhsal/PyPoll/blob/main/Images/write_summary.png)
 
 **displaying the text file afer writing to it:**
 
-![img](https://github.com/fhsal/PyPoll/blob/main/write_file_election_results.png)
+![img](https://github.com/fhsal/PyPoll/blob/main/Images/write_file_election_results.png)
 
