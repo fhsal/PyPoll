@@ -43,7 +43,9 @@ The results were not at all close.
 
 The script can be re-used in future elections as none of it is 'hard coded' for this data, meaning that more candidates and/or more counties would simply flow through. 
 
-The formatting and categories, however, would need to be updated if other stats or comparisons were sought (mean, distribution, etc.).   
+The formatting and categories, however, would need to be updated if other stats or comparisons were sought (mean, distribution, etc.). 
+
+### How the script iterates through the data and formats outouts 
 
 **Loading the data:**
 
