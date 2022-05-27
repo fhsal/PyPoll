@@ -67,13 +67,15 @@ The formatting and categories, however, would need to be updated if other stats 
 
 ![img](https://github.com/fhsal/PyPoll/blob/main/count_candidates.png)
 
-
-
 **displaying results:**
 
 ![img](https://github.com/fhsal/PyPoll/blob/main/display_summary.png)
 
 **writing results to file:**
+
+![img](https://github.com/fhsal/PyPoll/blob/main/write_summary.png)
+
+**displaying the text file afer writing to it:**
 
 ![img](https://github.com/fhsal/PyPoll/blob/main/write_file_election_results.png)
 
