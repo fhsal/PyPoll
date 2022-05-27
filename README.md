@@ -45,7 +45,7 @@ The script can be re-used in future elections as none of it is 'hard coded' for 
 
 The formatting and categories, however, would need to be updated if other stats or comparisons were sought (mean, distribution, etc.). 
 
-### How the script iterates through the data and formats outouts 
+### How the script iterates through the data and formats outputs 
 
 **Loading the data:**
 
