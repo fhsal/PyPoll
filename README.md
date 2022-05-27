@@ -37,7 +37,7 @@ The results were not at all close.
 
 - Diana DeGette won almost 74% of the vote 
 
-![img](https://github.com/fhsal/PyPoll/blob/main/display_summary.png)
+![img](https://github.com/fhsal/PyPoll/blob/main/election_results.png)
 
 ### How this be re-used for other elections
 
