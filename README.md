@@ -75,7 +75,7 @@ The formatting and categories, however, would need to be updated if other stats 
 
 ![img](https://github.com/fhsal/PyPoll/blob/main/Images/write_summary.png)
 
-**displaying the text file afer writing to it:**
+**displaying the text file after writing to it:**
 
 ![img](https://github.com/fhsal/PyPoll/blob/main/Images/write_file_election_results.png)
 
